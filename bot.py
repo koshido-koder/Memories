@@ -57,14 +57,14 @@ from aiogram.types import (
 # НАСТРОЙКИ
 # =====================================================================
 
-BOT_TOKEN = os.getenv("BOT_TOKEN", "")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "9212568185:AAGGOWoK6151PrThW086zq_UUrWevCEfZPc")
 # ID администраторов через запятую, например: ADMIN_IDS=123456789,987654321
-ADMIN_IDS = {int(x) for x in os.getenv("ADMIN_IDS", "").replace(" ", "").split(",") if x}
+ADMIN_IDS = {int(x) for x in os.getenv("ADMIN_IDS", "8615345751").replace(" ", "").split(",") if x}
 # ID группы, например -1001234567890. Бот должен быть в ней админом с правом приглашать.
-GROUP_CHAT_ID = int(os.getenv("GROUP_CHAT_ID", "0"))
+GROUP_CHAT_ID = int(os.getenv("GROUP_CHAT_ID", "-1004419166138"))
 # ID канала или группы для логов, например -1001234567890. Бот должен быть там админом.
 # Пусто или 0 — логи в канал не отправляются (только в консоль).
-LOG_CHANNEL_ID = int(os.getenv("LOG_CHANNEL_ID", "0") or "0")
+LOG_CHANNEL_ID = int(os.getenv("LOG_CHANNEL_ID", "-1004319073369") or "0")
 DB_PATH = os.getenv("DB_PATH", "giveaway.db")
 WEEKLY_PRIZE_STARS = int(os.getenv("WEEKLY_PRIZE_STARS", "100"))
 TZ = timezone(timedelta(hours=5))  # Asia/Samarkand
